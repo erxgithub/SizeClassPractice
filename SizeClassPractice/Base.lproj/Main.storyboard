@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClassPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c19-YG-bAO">
+                                <rect key="frame" x="174" y="357.66666666666669" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compact Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-9N-tB2">
+                                <rect key="frame" x="305" y="151.66666666666666" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regular Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-CT-Bd6">
+                                <rect key="frame" x="311" y="241.66666666666666" width="114" height="20.999999999999972"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c19-YG-bAO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="09P-x1-IwG"/>
+                            <constraint firstItem="c19-YG-bAO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXI-kB-v0R"/>
+                            <constraint firstItem="6Ft-9N-tB2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUb-4p-XkV"/>
+                            <constraint firstItem="bpI-CT-Bd6" firstAttribute="top" secondItem="c19-YG-bAO" secondAttribute="bottom" constant="24" id="h3h-6T-u9E"/>
+                            <constraint firstItem="c19-YG-bAO" firstAttribute="top" secondItem="6Ft-9N-tB2" secondAttribute="bottom" constant="24" id="jeb-RK-SI4"/>
+                            <constraint firstItem="bpI-CT-Bd6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMo-dg-6wE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6Ft-9N-tB2"/>
+                                <exclude reference="bpI-CT-Bd6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="aUb-4p-XkV"/>
+                                <exclude reference="jeb-RK-SI4"/>
+                                <exclude reference="h3h-6T-u9E"/>
+                                <exclude reference="zMo-dg-6wE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="6Ft-9N-tB2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="aUb-4p-XkV"/>
+                                <include reference="jeb-RK-SI4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="bpI-CT-Bd6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="h3h-6T-u9E"/>
+                                <include reference="zMo-dg-6wE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.77173913043478" y="133.33333333333334"/>
+        </scene>
+    </scenes>
+</document>
